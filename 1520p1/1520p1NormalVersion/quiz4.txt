@@ -1,0 +1,5 @@
+What is the shortest month of the year?#December:June:January:February#3
+How many weeks in a year?#51:43:52:49#2
+What planet is Superman from?#Uranus:Jupiter:Mars:Krypton#3
+How many days in leap year?#355:356:365:366#3
+A METER is a little longer than how many feet?#3:2:1:4#0

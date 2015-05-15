@@ -1,0 +1,7 @@
+quiz1.txt#5#NumOfTakers#TotCorr#TotIncorr
+quiz2.txt#5#1#1#4
+quiz3.txt#5#NumOfTakers#TotCorr#TotIncorr
+quiz4.txt#5#NumOfTakers#TotCorr#TotIncorr
+quiz5.txt#5#NumOfTakers#TotCorr#TotIncorr
+quiz6.txt#5#NumOfTakers#TotCorr#TotIncorr
+quiz7.txt#5#NumOfTakers#TotCorr#TotIncorr

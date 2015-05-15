@@ -1,0 +1,79 @@
+project 2 1502 
+
+
+- 1 DB with 3 tables
+	- admin info (id, password, email, tokentoken)
+		- hash passwords, see handout		
+	- Ticket (2 or more)
+		- need ID as primary key
+		- opentickets
+			- ticket #
+			- time received
+			- sender name
+			- sender email
+			- subject 
+			- description
+			- tech
+			- status
+		- user id focused table
+	- initialization script to generate the tables and to fill in the tickets shown 
+	  above from one or more flat files
+	  
+- submission ticket page
+	- name
+	- email
+	- subject of problem 1 line 
+	- brief description of problem few lines
+	- info complete checked at server side, incomplete back to input page
+	- submitted ticket
+		- confirmation webpage
+		- email confirmation
+		- request added to DB
+		- email sent to tech admin
+- admin page			admin.php
+	- login
+		- id, password
+		- wrong info display login page  
+	- reset password			reset.php
+		- send link to user email
+		- link should contain a random token
+		- token should be stored in DB - no one can fake the URL
+		- has reset.php file, make hyperlink
+- tickets page			tickets.php
+	- Show open ticket default, button options
+	- "View All Tickets" 
+		- show closed&open 
+		- Button now "View Open Tickets"
+	- "View My Tickets"
+		- only tickets assigned to ID 
+		- Button toggle to "View Open Tickets"
+	- "View Unassigned Tickets"
+		- only tickets with no tech assigned
+		- button toggle to "View Open Tickets"
+	- "Sort"
+		- overall table sorted based on selected listed, mysql ORDER BY
+		- no selected list, no sort
+	- "Logout"
+		- terminate session
+		- refresh or back will go to login page			//end session, delete cookies
+	- "View Selected Ticket" - no selection stay on page
+		- Close/reopen the ticket
+			- keep a flag in DB check for something that would have the 
+			  min waste of storage
+		- Assign self to ticket
+			- only available to unassigned tickets
+			- update the information in DB
+		- Remove self from ticket
+			- only available to cur admin tickets 
+			- update the information in DB
+		- Email the submitter
+			- You have done examples in lectures
+		- Delete the ticket from DB
+			- We did something similar in class
+		- Find all other tickets from the same submitter
+			- Send a query to database 
+			- display table same way as original tickets
+		- Find all similar tickets
+			- Tickets have 1 or more words common in subject
+			- display table same way as original tickets
+		- Logout go to main administrator page

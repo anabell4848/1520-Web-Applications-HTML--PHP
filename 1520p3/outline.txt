@@ -1,0 +1,51 @@
+project 3 1502 
+
+- Only changes in the database from Assignment 2 will be a field in the users 
+  table to determine regular user or an administrator, and the hashing 
+  of the passwords. Add a couple of extra accounts for the regular users.
+- All users of the system must log in first.  
+	- keep track of both regular users and administrators in your database, 
+	and distinguish between the two based on their ids.  
+	- New (non-administrator) users able to register during the login process.
+	Update database and go to login page.
+- Administrator logs in
+	- Sees the initial Open Tickets page as in Assignment 2, with the addition 
+	  of the Change password option.  
+		- Data shown in tickets table must now also be stored in a Javascript 
+		variable (think).  All sorting options for tickets (by received, by 
+		sender name, by sender email, by subject) must be done locally by client, 
+		no contacting server.
+	- Any options done by the administrator that require new data (ex: switching 
+	  views) must be done using AJAX techniques (no refresh). 
+		- within each different view the sorting options are allowed, and must be 
+		done locally. 
+		- Thus, with each switch of the view data downloaded from server 
+		must be stored in a Javascript variable.
+		- "View Selected Ticket"(and all options derived) must be implemented 
+		without a refresh. Done by presenting the single ticket in a table formatted in 
+		the same way that you present the entire list of tickets.  If necessary, you 
+		can even completely reformat the page being viewed using DOM.
+-(non-administrator) logs in, have 3 options:
+	1. Submit a new ticket
+	2. See all of my tickets
+	3. Change password
+		
+- other filter methods
+- view selected ticket	
+- For good security, your entire site should be required to use https rather 
+  than http.  This can be done in a fairly easy fashion with XAMPP, since it 
+  enables HTTPS by default.  To see how to require HTTPS: ex20s.php, ex20bs.php, ex20cs.php.
+- Site should use CSS and be presented in a very nicely formatted way.  
+  Style points will be given.
+- 2 versions of initialization script: initME.php and initSalim.php. Use your 
+  email address (with the + option) for all of the email accounts in the initial 
+  database, use (sem156@pitt.edu)(again with the + option) initSalim.php.  
+  Otherwise, the two scripts should be identical. However, DO NOT HARDCODE any 
+  email address into the software.  You should allow a new user to have any email address.
+  
+  
+  
+  
+  
+  
+  
